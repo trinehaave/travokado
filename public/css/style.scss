@@ -1,0 +1,108 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  outline: 1px red solid;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/*Layout*/
+.big-grid-container {
+  display: grid;
+  grid-template-columns: 2 1fr;
+  grid-template-rows: 1fr;
+  height: 600px;
+}
+
+.left-grid-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 20% 30% 30% 20%;
+}
+
+.right-grid-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 20% 30% 30% 20%;
+}
+
+
+.navigation {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.portrait-div {
+  //outline: 2px solid aqua;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url("../images/portrett.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.name-h1 {
+  //outline: 2px solid aqua;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+.madeby-p {
+  //outline: 2px solid aqua;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+.title-h2 {
+  //outline: 2px solid aqua;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+.info-span {
+  //outline: 2px solid aqua;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+.tools-list {
+  //outline: 2px solid aqua;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
