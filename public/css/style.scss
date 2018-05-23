@@ -33,6 +33,11 @@ html {
     grid-template-rows: 2 1fr;
    }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
 }
 
 .left-grid-container {
@@ -51,6 +56,13 @@ html {
    }
 }
 
+.icon {
+  margin: 40px 10px;
+}
+
+.first-icon {
+  margin-left: 30px;
+}
 
 img {
   margin: 0 auto 5% auto;
@@ -96,14 +108,18 @@ img {
 
 }
 
+h2 {
+  text-transform: uppercase;
+  font-family: $f-header;
+  font-weight: 600;
+}
+
 .title-h2 {
   //outline: 2px solid aqua;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  font-family: $f-header;
-  font-weight: 600;
   display: inline-block;
 }
 
@@ -114,7 +130,7 @@ img {
   grid-row-start: 2;
   grid-row-end: 3;
   font-size: 1.3rem;
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 .skills-h2 {
@@ -123,8 +139,6 @@ img {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  font-family: $f-header;
-  font-weight: 600;
   display: inline-block;
 }
 
@@ -135,7 +149,7 @@ img {
   grid-row-start: 3;
   grid-row-end: 4;
   font-size: 1.3rem;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 
@@ -145,8 +159,6 @@ img {
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
-  font-family: $f-header;
-  font-weight: 600;
   display: inline-block;
 }
 
@@ -157,7 +169,7 @@ img {
   grid-row-start: 4;
   grid-row-end: 5;
   font-size: 1.3rem;
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 
