@@ -23,36 +23,21 @@ html {
 }
 
 /*Layout*/
-.big-grid-container {
-  display: grid;
-  grid-template-columns: 2 1fr;
-  grid-template-rows: 1fr;
-  height: auto;
-  @media only screen and (max-width: 800px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2 1fr;
-   }
 
 .flex-container {
     display: flex;
     flex-direction: row;
+    &.right-container {
+        flex-direction: column;
+     }
 }
 
-}
 
-.left-grid-container {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: grid;
-  grid-template-columns: repeat(5, 0.5fr);
-  grid-template-rows: repeat(5, 0.6fr);
+.left-container {
+  width: 50%;
+  flex-direction: column;
   @media only screen and (max-width: 800px) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    width: 100%;
    }
 }
 
@@ -68,18 +53,10 @@ html {
    }
 }
 
-.first-icon {
-  margin-left: 45px;
-}
-
 img {
   margin: 0 auto 5% auto;
   display: block;
-  width: 100%;
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 5;
+  height: 400px;
 }
 
 .name-h1 {
@@ -96,24 +73,12 @@ img {
 
 }
 
-
-.right-grid-container {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 3fr 1fr;
-  grid-template-rows: repeat(5, 0.6fr);
-  background-color: #b9dad1;
-  @media only screen and (max-width: 800px) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-   }
-
-
+  .right-container {
+    width: 50%;
+    background-color: #b9dad1;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+     }
 }
 
 h2 {
@@ -134,7 +99,7 @@ h2 {
 .info-span {
   //outline: 2px solid aqua;
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   font-size: 1.3rem;
@@ -153,7 +118,7 @@ h2 {
 .skills-span {
   //outline: 2px solid aqua;
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   font-size: 1.3rem;

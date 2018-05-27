@@ -20,26 +20,20 @@
 
 <body>
   <main>
-    <div class="big-grid-container">
-      <div class="left-grid-container">
-        <nav class="grid-element flex-container navigation">
-          <a href="https://github.com/trinehaave">
-  <img class="icon first-icon" src="images/github.svg" alt="HTML tutorial">
-</a>
-          <a href="https://linkedin.com/trinehaave">
-  <img class="icon" src="images/linkedin.svg" alt="HTML tutorial">
-</a><a href="https://linkedin.com/trinehaave">
-  <img class="icon" src="images/mail.svg" alt="HTML tutorial">
-</a>
-        </nav>
-        <img src="images/portrett.jpg" alt="portrait">
-        <h1 class="grid-element name-h1">Trine<br/>Håve</h1>
+    <div class="big-container flex-container">
+
+      <div class="left-container flex-container">
+        <div class="portrait-container flex-container">
+          <img src="images/portrett.jpg" alt="portrait">
+          <h1 class="name-h1">Trine<br/>Håve</h1>
+        </div>
       </div>
-      <div class="right-grid-container">
-        <h2 class="grid-element title-h2">Web Developer</h2>
-        <span class="grid-element info-span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo veniam et autem necessitatibus esse, quis numquam aspernatur, omnis commodi minima placeat assumenda, ratione adipisci. Sint facere ipsam, vitae architecto.</span>
-        <h2 class="grid-element skills-h2">Skills</h2>
-        <span class="grid-element skills-span">  <ul class="grid-element tools-list">
+
+      <div class="right-container flex-container">
+        <h2 class="title-h2">Web Developer</h2>
+        <span class="info-span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo veniam et autem necessitatibus esse, quis numquam aspernatur, omnis commodi minima placeat assumenda, ratione adipisci. Sint facere ipsam, vitae architecto.</span>
+        <h2 class="skills-h2">Skills</h2>
+        <span class="skills-span">  <ul class="grid-element tools-list">
             <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -47,17 +41,27 @@
             <li>Node.js</li>
             <li>React</li>
           </ul></span>
-        <h2 class="grid-element featured-h2">Featured projects</h2>
-        <span class="grid-element featured-span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo veniam et autem necessitatibus esse, quis numquam aspernatur, omnis commodi minima placeat assumenda, ratione adipisci. Sint facere ipsam, vitae architecto.</span>
+        <h2 class="featured-h2">Featured projects</h2>
+        <span class="featured-span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo veniam et autem necessitatibus esse, quis numquam aspernatur, omnis commodi minima placeat assumenda, ratione adipisci. Sint facere ipsam, vitae architecto.</span>
+        <h2 class="featured-h2">Contact me</h2>
+        <div class="flex-container nav-container">
+          <nav class="flex-container navigation">
+            <a href="https://github.com/trinehaave">
+              <img class="icon first-icon" src="images/github.svg" alt="HTML tutorial">
+            </a>
+            <a href="https://linkedin.com/trinehaave">
+              <img class="icon" src="images/linkedin.svg" alt="HTML tutorial">
+            </a>
+            <a href="https://linkedin.com/trinehaave">
+              <img class="icon" src="images/mail.svg" alt="HTML tutorial">
+            </a>
+          </nav>
+        </div>
       </div>
     </div>
 
   </main>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-  <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
