@@ -27,20 +27,27 @@ html {
 .flex-container {
     display: flex;
     flex-direction: row;
-    &.right-container {
+    &.div-content {
         flex-direction: column;
      }
 }
 
 
 .left-container {
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  flex-direction: column;
   @media only screen and (max-width: 800px) {
     width: 100%;
    }
 }
-
+.big-container {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  @media only screen and (max-width: 800px) {
+    position: relative;
+   }
+}
 .icon {
   margin: 50px 10px;
   width:35px;
@@ -53,24 +60,20 @@ html {
    }
 }
 
-img {
-  margin: 0 auto 5% auto;
-  display: block;
-  height: 400px;
+.portrait-container {
+  height: 600px;
+  width: 350px;
+  background-image: url("../images/portrett.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .name-h1 {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-left: 10%;
   font-family: $f-header;
   font-size: 5rem;
   font-weight: 100;
   letter-spacing: 0.3rem;
   line-height: 90%;
-
 }
 
   .right-container {
@@ -79,6 +82,11 @@ img {
     @media only screen and (max-width: 800px) {
       width: 100%;
      }
+}
+
+.div-content {
+  overflow: scroll;
+  padding: 4% 8%;
 }
 
 h2 {
