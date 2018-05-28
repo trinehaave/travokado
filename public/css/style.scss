@@ -4,7 +4,7 @@ $f-body: "adobe-caslon-pro", serif;
 $c-brand: #3e414a;
 
 
-//possible backgrounds e4d4d2 9cb4b4 fff7f5 a7be9a 98a9a5 9e9999
+//possible backgrounds e4d4d2 9cb4b4 fff7f5 a7be9a 98a9a5 9e9999 cbd2b7
 /* Global */
 * {
   box-sizing: border-box;
@@ -118,7 +118,11 @@ h2 {
    }
 }
 
-span {
+span.f {
+  letter-spacing: 0.04rem;
+}
+
+.content-span {
   font-size: 1.2rem;
   box-shadow: -0.1rem 0 0 #fff;
   margin-left: 7%;
