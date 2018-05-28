@@ -1,8 +1,10 @@
 /*variables*/
 $f-header: "futura-pt", sans-serif;
 $f-body: "adobe-caslon-pro", serif;
-$c-brand: #1B1B1B;
+$c-brand: #3e414a;
 
+
+//possible backgrounds e4d4d2 9cb4b4 fff7f5 a7be9a 98a9a5 9e9999
 /* Global */
 * {
   box-sizing: border-box;
@@ -80,7 +82,7 @@ html {
 .name-h1 {
   font-family: $f-header;
   font-size: 5rem;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.3rem;
   line-height: 90%;
   position: relative;
@@ -89,7 +91,7 @@ html {
 
   .right-container {
     width: 50%;
-    background-color: #b9dad1;
+    background-color: #b9d0d0;
     @media only screen and (max-width: 800px) {
       width: 100%;
      }
@@ -108,6 +110,8 @@ h2 {
   letter-spacing: 0.03rem;
   font-size: 1.3rem;
   margin-top: 5%;
+  color: #3e414a;
+  font-weight: 400;
 
    &.title-h2{
      margin-top: 7%;
