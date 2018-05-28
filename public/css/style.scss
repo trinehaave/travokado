@@ -58,9 +58,9 @@ html {
 }
 
 .icon {
-  margin: 50px 10px;
-  width:30px;
-  height: 30px;
+  margin: 50px 15px;
+  width:32px;
+  height: 32px;
   border:0;
   @media only screen and (max-width: 800px) {
     margin: 20px 10px;
@@ -114,7 +114,7 @@ h2 {
   font-weight: 500;
 
    &.title-h2{
-     margin-top: 7%;
+     margin-top: 20%;
    }
 }
 
