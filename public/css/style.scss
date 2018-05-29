@@ -38,7 +38,7 @@ html {
 .left-container {
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
   @media only screen and (max-width: 800px) {
     width: 100%;
    }
@@ -90,7 +90,7 @@ html {
 }
 
   .right-container {
-    width: 50%;
+    width: 55%;
     background-color: #b9d0d0;
     @media only screen and (max-width: 800px) {
       width: 100%;
@@ -114,7 +114,7 @@ h2 {
   font-weight: 500;
 
    &.title-h2{
-     margin-top: 20%;
+     margin-top: 13%;
    }
 }
 
@@ -126,5 +126,16 @@ h2 {
 
   &.skills-span {
   word-spacing: 0.1rem;
+  }
+}
+
+a {
+  
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.03rem;
+  &:hover {
+    cursor: pointer;
+    color: #f9f9f9;
   }
 }
