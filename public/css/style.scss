@@ -92,12 +92,13 @@ html {
 
 .name-h1 {
   font-family: $f-header;
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25rem;
   line-height: 90%;
   position: relative;
-  right: -80%;
+  right: -81%;
+  top: 2%;
   @media only screen and (max-width: 1200px) {
     letter-spacing: 0.1rem;
     font-size: 3.7rem;
