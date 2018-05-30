@@ -1,4 +1,4 @@
-/*variables*/
+
 $f-header: "futura-pt", sans-serif;
 $f-body: "adobe-caslon-pro", serif;
 $c-brand: #3e414a;
@@ -49,6 +49,10 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
+
+  @media only screen and (max-width: 1200px) {
+    //position: static;
+  }
   @media only screen and (max-width: 800px) {
     flex-direction: column;
     position: static;
@@ -76,12 +80,15 @@ html {
 .portrait-container {
   height: 495px;
   width: 330px;
-  max-width: 70%;
+  max-width: 60%;
+  min-width: 250px;
   background-image: url("../images/headshot.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin-left: -50px;
-  @media only screen and (max-width: 1100px) {}
+  @media only screen and (max-width: 1100px) {
+
+  }
   @media only screen and (max-width: 800px) {
     height: 350px;
     width: 270px;
@@ -152,6 +159,18 @@ h2 {
 
   &.title-h2 {
     margin-top: 13%;
+
+      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+        margin-top: 23%;
+    }
+
+    @media only screen and (min-width: 800px) and (max-width: 999px) {
+      margin-top: 40%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 5%;
+}
   }
 }
 
