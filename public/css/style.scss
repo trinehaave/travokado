@@ -43,12 +43,12 @@ html {
 
 .big-container {
   position: absolute;
+  width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   @media only screen and (max-width: 1200px) {
-    //position: static;
   }
   @media only screen and (max-width: 800px) {
     flex-direction: column;
@@ -110,11 +110,17 @@ html {
 
 .div-content {
   overflow: scroll;
-  padding: 4% 8%;
+  padding: 2% 8%;
   justify-content: center;
   //align-items: center;
+  @media only screen and (min-width: 1400px){
+    padding: 2% 14%;
+  }
   @media only screen and (min-width: 800px) and (max-width: 950px) {
     align-items: center;
+  }
+  @media only screen and (max-height: 750px) and (min-width: 800px) {
+    justify-content: flex-start;
   }
   @media only screen and (max-width: 550px) {
     align-items: center;
@@ -155,19 +161,6 @@ h2 {
   margin-top: 5%;
   color: #3e414a;
   font-weight: 500;
-
-  &.title-h2 {
-    margin-top: 13%;
-    @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-      margin-top: 23%;
-    }
-    @media only screen and (min-width: 800px) and (max-width: 999px) {
-      margin-top: 40%;
-    }
-    @media only screen and (max-width: 800px) {
-      margin-top: 5%;
-    }
-  }
 }
 
 .content-span {
@@ -188,6 +181,10 @@ h2 {
 
   &.skills-span {
     word-spacing: 0.1rem;
+  }
+
+  &.featured-span {
+    margin-bottom: 10%;
   }
 }
 

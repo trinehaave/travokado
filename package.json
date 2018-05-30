@@ -18,5 +18,8 @@
     "gulp-util": "^3.0.8",
     "normalize.css": "^8.0.0",
     "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
+    "gulp-uglify-es": "^1.0.4"
   }
 }

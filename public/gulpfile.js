@@ -1,6 +1,7 @@
 let gulp = require('gulp')
 let sass = require('gulp-sass')
 let minifyCss = require('gulp-clean-css')
+let minifyJs = require('uglify-es')
 let gutil = require('gulp-util')
 let plumber = require('gulp-plumber')
 let autoprefixer = require('gulp-autoprefixer')
@@ -28,6 +29,14 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream())
 })
 
+gulp.task('minify-js', () => {
+  gulp.src('js/*.js')
+    .pipe(minifyJs())
+    .on('error', swallowError)
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream())
+})
+
 gulp.task('watch', function () {
   browserSync.init({
     server: {
@@ -35,5 +44,6 @@ gulp.task('watch', function () {
     }
   })
   gulp.watch('css/*.scss', ['sass'])
+  gulp.watch('js/*.js', ['minify-js'])
   gulp.watch('*.html', browserSync.reload)
 })
