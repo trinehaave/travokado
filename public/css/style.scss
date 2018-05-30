@@ -1,12 +1,10 @@
-
+/* Variables */
 $f-header: "futura-pt", sans-serif;
 $f-body: "adobe-caslon-pro", serif;
 $c-brand: #3e414a;
-//possible backgrounds e4d4d2 9cb4b4 fff7f5 a7be9a 98a9a5 9e9999 cbd2b7
 /* Global */
 * {
   box-sizing: border-box;
-  //outline: 1px rgba(0,0,0,0.2) solid;
 }
 
 body,
@@ -49,7 +47,6 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-
   @media only screen and (max-width: 1200px) {
     //position: static;
   }
@@ -75,6 +72,10 @@ html {
     width: 25px;
     height: 25px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .portrait-container {
@@ -86,40 +87,12 @@ html {
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin-left: -50px;
-  @media only screen and (max-width: 1100px) {
-
-  }
+  @media only screen and (max-width: 1100px) {}
   @media only screen and (max-width: 800px) {
     height: 350px;
     width: 270px;
     margin-bottom: 5%;
     margin-top: 5%;
-  }
-}
-
-.name-h1 {
-  font-family: $f-header;
-  font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: 0.25rem;
-  line-height: 90%;
-  position: relative;
-  right: -81%;
-  top: 2%;
-  @media only screen and (max-width: 1200px) {
-    letter-spacing: 0.1rem;
-    font-size: 3.7rem;
-    right: -79%;
-  }
-  @media only screen and (max-width: 1000px) {
-    font-size: 3.5rem;
-    letter-spacing: 0rem;
-    right: -78%;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 3.9rem;
-    letter-spacing: 0;
-    right: -80%;
   }
 }
 
@@ -147,6 +120,32 @@ html {
     align-items: center;
   }
 }
+/* Typography */
+.name-h1 {
+  font-family: $f-header;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  line-height: 90%;
+  position: relative;
+  right: -81%;
+  top: 2%;
+  @media only screen and (max-width: 1200px) {
+    letter-spacing: 0.1rem;
+    font-size: 3.7rem;
+    right: -79%;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 3.5rem;
+    letter-spacing: 0;
+    right: -78%;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 3.9rem;
+    letter-spacing: 0;
+    right: -80%;
+  }
+}
 
 h2 {
   text-transform: uppercase;
@@ -159,18 +158,15 @@ h2 {
 
   &.title-h2 {
     margin-top: 13%;
-
-      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-        margin-top: 23%;
+    @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+      margin-top: 23%;
     }
-
     @media only screen and (min-width: 800px) and (max-width: 999px) {
       margin-top: 40%;
-  }
-
-  @media only screen and (max-width: 800px) {
-    margin-top: 5%;
-}
+    }
+    @media only screen and (max-width: 800px) {
+      margin-top: 5%;
+    }
   }
 }
 
@@ -196,12 +192,12 @@ h2 {
 }
 
 a {
-  color: #fff;
+  color: #fefefe;
   text-decoration: none;
   letter-spacing: 0.03rem;
 
   &:hover {
     cursor: pointer;
-    color: #f9f9f9;
+    opacity: 0.8;
   }
 }
