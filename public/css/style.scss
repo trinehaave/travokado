@@ -207,5 +207,6 @@ a {
   &:hover {
     cursor: pointer;
     opacity: 0.8;
+    transition: 160ms ease-out;
   }
 }
