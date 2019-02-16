@@ -12,6 +12,8 @@ function swallowError (error) {
   this.emit('end')
 }
 
+gulp.task( 'default', [ 'watch' ] )
+
 gulp.task('sass', function () {
   gulp.src('css/*.scss')
     .pipe(sass())
